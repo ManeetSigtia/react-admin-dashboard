@@ -16,7 +16,7 @@ export const tokens = (mode) => ({
           800: "#292929",
           900: "#141414",
         },
-        primay: {
+        primary: {
           100: "#d0d1d5",
           200: "#a1a4ab",
           300: "#727681",
@@ -73,7 +73,7 @@ export const tokens = (mode) => ({
           800: "#c2c2c2",
           900: "#e0e0e0",
         },
-        primay: {
+        primary: {
           100: "#040509",
           200: "#080b12",
           300: "#0c101b",
@@ -130,7 +130,7 @@ export const themeSettings = (mode) => {
       ...(mode === "dark"
         ? {
             primary: {
-              main: colours.primay[500],
+              main: colours.primary[500],
             },
             secondary: {
               main: colours.greenAccent[500],
@@ -146,7 +146,7 @@ export const themeSettings = (mode) => {
           }
         : {
             primary: {
-              main: colours.primay[100],
+              main: colours.primary[100],
             },
             secondary: {
               main: colours.greenAccent[500],
@@ -198,7 +198,7 @@ export const ColourModeContext = createContext({
 });
 
 export const useMode = () => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
 
   const colourMode = useMemo(
     () => ({
